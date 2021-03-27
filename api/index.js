@@ -5,7 +5,7 @@ const { conn } = require('./db');
 // Syncing all the models at once. Sincronizando todos los modelos a la vez
 // conn.sync({ force: false }).then(() => {
 
-  server.listen(4000, () => {  
+  server.listen(process.env.PORT, () => {  
     console.log('%s listening at 4000'); // eslint-disable-line no-console
   });
 // });    
